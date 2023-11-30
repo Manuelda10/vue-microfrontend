@@ -17,7 +17,6 @@
       </nav>
       <div class="flex justify-end items-center w-[25%]">
         <button class="box-border bg-transparent border-solid border-2 border-white text-white rounded-md px-3 py-1 font-medium hover:bg-white hover:text-blue-500 ease-in duration-200 mx-2">Notificaciones</button>
-        <ButtonAuth/>
       </div>
     </header>
 </template>
