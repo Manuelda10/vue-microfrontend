@@ -11,6 +11,9 @@
               <button className='rounded-md px-4 bg-white text-gray-600 mx-2 hover:text-gray-900 ease-in duration-200' @click="filterByDepartment" >
                 Filtrar
               </button>
+              <button @click="reload" class='rounded-md px-4 bg-blue-600 text-white mx-2 hover:bg-blue-700 ease-in duration-200'>
+                <img src='./assets/reload.png' class="w-5" alt="Logo"/>
+              </button>
             </div>
             <div className='py-2 my-4'>
             <table className='w-[100%]'>
@@ -108,6 +111,13 @@ export default {
       const filteredDocuments = this.listDocuments.filter(document => document.departamento == this.search_department)
 
       this.listDocuments = filteredDocuments
+    },
+
+    reload(){
+      console.log("Holaaa")
+      this.search_department = ''
+      this.getDocuments()
+      return
     }
   },
 
